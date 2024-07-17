@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane fx:controller="org.example.bankmanagementsystem.LoginPageController" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="478.0" prefWidth="882.0" style="-fx-background-color: #00001e;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fitHeight="391.0" fitWidth="484.0" layoutX="33.0" layoutY="94.0" opacity="0.43" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../iml.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="564.0" layoutY="93.0" opacity="0.82" prefHeight="323.0" prefWidth="286.0" style="-fx-background-color: #000059;">
+         <children>
+            <Label layoutX="108.0" layoutY="14.0" text="Sign In" textFill="#ececec">
+               <font>
+                  <Font name="System Bold Italic" size="23.0" />
+               </font>
+            </Label>
+            <JFXRadioButton fx:id="ManagerBTN" layoutX="24.0" layoutY="48.0" text="Manager" textFill="#f2eaea">
+               <unSelectedColor>
+                  <Color red="0.9473684430122375" green="0.9333333373069763" blue="0.9333333373069763" />
+               </unSelectedColor>
+            </JFXRadioButton>
+            <JFXRadioButton fx:id="ClientBTN" layoutX="24.0" layoutY="77.0" text="Client" textFill="#fffafa">
+               <unSelectedColor>
+                  <Color red="0.9578947424888611" green="0.922417163848877" blue="0.922417163848877" />
+               </unSelectedColor>
+            </JFXRadioButton>
+            <TextField fx:id="userField" layoutX="28.0" layoutY="119.0" prefHeight="26.0" prefWidth="229.0" promptText="Username" />
+            <PasswordField fx:id="passField" layoutX="27.0" layoutY="179.0" prefHeight="26.0" prefWidth="230.0" promptText="Password" />
+            <JFXButton fx:id="loginBTN" buttonType="RAISED" layoutX="117.0" layoutY="230.0" ripplerFill="#d4c5c5" text="Log in" textFill="#fcf0f0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </JFXButton>
+            <Label layoutX="17.0" layoutY="282.0" prefHeight="18.0" prefWidth="190.0" text="New to SBI  first register please ?" textFill="#eae3e3">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="signUpBTN" layoutX="221.0" layoutY="279.0" text="Sign up" textFill="#f4f2f2" />
+         </children>
+      </AnchorPane>
+      <Label layoutX="314.0" layoutY="25.0" text="Welcome to SBI" textFill="#f2f1f1">
+         <font>
+            <Font name="System Bold Italic" size="29.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

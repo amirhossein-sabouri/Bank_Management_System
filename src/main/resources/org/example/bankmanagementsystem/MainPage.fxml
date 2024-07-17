@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXListView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="552.0" prefWidth="798.0" style="-fx-background-color: #00001e;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.bankmanagementsystem.MainPageController">
+   <children>
+      <TabPane layoutX="1.0" layoutY="90.0" prefHeight="453.0" prefWidth="794.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab fx:id="depositBTN" text="Deposit">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="339.0" prefWidth="794.0">
+                     <children>
+                        <ImageView fitHeight="413.0" fitWidth="794.0" layoutY="2.0" opacity="0.17">
+                           <image>
+                              <Image url="@../../../money.jpg" />
+                           </image>
+                        </ImageView>
+                        <TextField fx:id="AmountDeposit" layoutX="281.0" layoutY="182.0" prefHeight="38.0" prefWidth="231.0" text="Amount" />
+                        <Label layoutX="330.0" layoutY="60.0" prefHeight="67.0" prefWidth="134.0" text="Deposit" textFill="#e1e1e1">
+                           <font>
+                              <Font name="System Bold Italic" size="36.0" />
+                           </font>
+                        </Label>
+                        <JFXButton fx:id="DoneDeposit" layoutX="363.0" layoutY="284.0" text="Done" textFill="#faeded">
+                           <font>
+                              <Font name="System Bold Italic" size="18.0" />
+                           </font>
+                        </JFXButton>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab fx:id="withdrawBTN" text="Withdraw">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <ImageView fitHeight="421.0" fitWidth="794.0" layoutY="2.0" opacity="0.17">
+                           <image>
+                              <Image url="@../../../money.jpg" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="310.0" layoutY="66.0" prefHeight="67.0" prefWidth="174.0" text="Withdraw" textFill="#e1e1e1">
+                           <font>
+                              <Font name="System Bold Italic" size="36.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="AmountWithdraw" layoutX="281.0" layoutY="182.0" prefHeight="38.0" prefWidth="231.0" text="Amount" />
+                        <JFXButton fx:id="DoneWithdraw" layoutX="363.0" layoutY="286.0" text="Done" textFill="#faeded">
+                           <font>
+                              <Font name="System Bold Italic" size="18.0" />
+                           </font>
+                        </JFXButton>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+            <Tab fx:id="transferBTN" text="Transfer">
+                <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                        <children>
+                            <ImageView fitHeight="421.0" fitWidth="794.0" layoutY="2.0" opacity="0.17">
+                                <image>
+                                    <Image url="@../../../money.jpg" />
+                                </image>
+                            </ImageView>
+                        <Label layoutX="309.0" layoutY="48.0" prefHeight="67.0" prefWidth="150.0" text="Transfer" textFill="#e1e1e1">
+                           <font>
+                              <Font name="System Bold Italic" size="36.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="DestNumTransfer" alignment="CENTER" layoutX="249.0" layoutY="148.0" prefHeight="30.0" prefWidth="270.0" text="DestinationAcoountNum" />
+                        <TextField fx:id="AmountTransfer" alignment="CENTER" layoutX="248.0" layoutY="213.0" prefHeight="30.0" prefWidth="272.0" text="Amount" />
+                        <JFXButton fx:id="DoneTransfer" layoutX="350.0" layoutY="294.0" text="Done" textFill="#faeded">
+                           <font>
+                              <Font name="System Bold Italic" size="18.0" />
+                           </font>
+                        </JFXButton>
+                        </children>
+                    </AnchorPane>
+                </content>
+            </Tab>
+            <Tab fx:id="transactionsBTN" text="Transactions">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <ImageView fitHeight="421.0" fitWidth="794.0" layoutY="2.0" opacity="0.17">
+                           <image>
+                              <Image url="@../../../money.jpg" />
+                           </image>
+                        </ImageView>
+                        <JFXButton fx:id="transactionShowBTN" layoutX="301.0" layoutY="37.0" style="-fx-border-color: #ffffff;" text="Transactions" textFill="#f2f2f2">
+                           <font>
+                              <Font name="System Bold Italic" size="26.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXListView fx:id="LVtransactions" layoutX="138.0" layoutY="103.0" prefHeight="294.0" prefWidth="518.0" style="-fx-background-color: #00001E;" />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+      <Label layoutX="52.0" layoutY="31.0" text="Account Num" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="UPaccontNumLBL" alignment="CENTER" layoutX="235.0" layoutY="31.0" prefHeight="30.0" prefWidth="328.0" text="Label" textFill="#f2f2f2">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="exitBTN" layoutX="715.0" layoutY="27.0" text="Exit" textFill="#faf3f3">
+         <font>
+            <Font name="System Bold Italic" size="17.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

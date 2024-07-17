@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane  maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="704.0" prefWidth="592.0" style="-fx-background-color: #00001e;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.bankmanagementsystem.RegistrationPageController">
+   <children>
+      <AnchorPane layoutX="48.0" layoutY="25.0" prefHeight="618.0" prefWidth="494.0" style="-fx-background-color: #010636;">
+         <children>
+            <Label layoutX="176.0" layoutY="28.0" prefHeight="50.0" prefWidth="142.0" text="Registration" textFill="#fcfcfc">
+               <font>
+                  <Font name="System Bold Italic" size="24.0" />
+               </font>
+            </Label>
+            <TextField fx:id="firstName" layoutX="55.0" layoutY="124.0" prefHeight="26.0" prefWidth="171.0" promptText="Firstname" text="Firstname" />
+            <TextField fx:id="lastName" layoutX="263.0" layoutY="124.0" prefHeight="26.0" prefWidth="178.0" text="Lastname" />
+            <DatePicker fx:id="birthDate" layoutX="57.0" layoutY="197.0" prefHeight="26.0" prefWidth="171.0" promptText="Birthdate" />
+            <AnchorPane layoutX="266.0" layoutY="190.0">
+               <children>
+                  <JFXRadioButton fx:id="male" layoutX="123.0" layoutY="22.0" text="Male" textFill="#f2eaea" />
+                  <JFXRadioButton fx:id="female" layoutX="40.0" layoutY="22.0" text="Female" textFill="#fcfbfb" />
+                  <Label text="Gender :" textFill="#f7f6f6" />
+               </children>
+            </AnchorPane>
+            <ComboBox fx:id="country" layoutX="57.0" layoutY="284.0" prefHeight="26.0" prefWidth="171.0" promptText="Country" />
+            <TextField fx:id="id" layoutX="270.0" layoutY="284.0" prefHeight="26.0" prefWidth="171.0" text="ID" />
+            <TextField fx:id="fatherName" layoutX="57.0" layoutY="360.0" prefHeight="26.0" prefWidth="171.0" text="Fathername" />
+            <TextField fx:id="phoneNum" layoutX="269.0" layoutY="360.0" prefHeight="26.0" prefWidth="171.0" text="PhoneNumber" />
+            <TextField fx:id="initial" layoutX="270.0" layoutY="430.0" prefHeight="26.0" prefWidth="171.0" text="Initial amount" />
+            <PasswordField fx:id="password" layoutX="57.0" layoutY="430.0" prefHeight="26.0" prefWidth="171.0" promptText="Password" />
+            <JFXButton fx:id="Done" layoutX="223.0" layoutY="482.0" text="Done" textFill="#eaeaea">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+            </JFXButton>
+            <Label layoutX="59.0" layoutY="536.0" prefHeight="19.0" prefWidth="374.0" text="In order to verify your account you'll be leaded to login page" textFill="#f2efef">
+               <font>
+                  <Font name="System Bold Italic" size="13.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="verify" layoutX="221.0" layoutY="574.0" text="Verify" textFill="#fffcfc">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
